@@ -12,4 +12,7 @@ setup(
     long_description=open('README.md').read(),
     keywords='android gcm push notification google cloud messaging',
     tests_require = ['mock'],
+    extras_requires = {
+        'ujson': ['ujson>=1.30']
+        }
 )

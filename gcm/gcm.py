@@ -1,6 +1,9 @@
 import urllib
 import urllib2
-import json
+try:
+    import ujson as json
+except ImportError:
+    import json
 from collections import defaultdict
 import time
 import random
